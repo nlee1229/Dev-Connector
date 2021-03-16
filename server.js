@@ -1,6 +1,9 @@
 const express = require('express'); // bring in express
+const connectDB = require('./config/db'); // coming in from config db file
 
 const app = express(); // initialize our app variable with express
+
+connectDB(); // connect DB 
 
 app.get('/', (req, res) => res.send('API RUNNING')); // createa a single endpoint to test out
 
