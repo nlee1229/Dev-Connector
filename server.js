@@ -1,5 +1,5 @@
 const express = require('express'); // bring in express
-const connectDB = require('./config/db'); // coming in from config db file
+const connectDB = require('./config/db'); // bringing in from config db file to reduce clutter in this file
 
 const app = express(); // initialize our app variable with express
 
